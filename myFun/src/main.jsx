@@ -6,6 +6,7 @@ import './index.css'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import CardInfo from './component/CardInfo.jsx'
 
 
 import {
@@ -25,6 +26,14 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact/>,
+  },
+  {
+    path: "/",
+    element: <App/>,
+  },
+  {
+    path: "/cards/:name",
+    element: <CardInfo/>,
   },
 ]);
 
